@@ -1,0 +1,56 @@
+name: kyaw_phyoe_han_portfolio
+description: "My portfolio application powered by Flutter."
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  get:
+  shared_preferences:
+  cached_network_image:
+  intl:
+  share_plus: ^7.2.1
+  flutter_svg: ^2.0.9
+  sqflite: ^2.3.3+1
+  json_editor: ^0.0.8
+  url_launcher:
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+
+    # - assets/data/
+    - assets/images/
+    - assets/images/projects_logo/
+    # - assets/media/
+    # - assets/svgs/
+
+  fonts:
+    - family: Ubuntu
+      fonts:
+        - asset: assets/fonts/ubuntu/UbuntuMono-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/ubuntu/UbuntuMono-Regular.ttf
+          weight: 800
+    - family: Megatrans
+      fonts:
+        - asset: assets/fonts/megatrans/megatrans.otf
+          weight: 600
+
