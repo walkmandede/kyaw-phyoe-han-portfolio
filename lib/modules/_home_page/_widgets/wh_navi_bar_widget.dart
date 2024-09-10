@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 import 'package:kyaw_phyoe_han_portfolio/_common/_widgets/fitted_widget.dart';
 import 'package:kyaw_phyoe_han_portfolio/_common/constants/app_assets.dart';
 import 'package:kyaw_phyoe_han_portfolio/_common/constants/app_constants.dart';
@@ -85,6 +86,13 @@ class WhNaviBarWidget extends StatelessWidget {
                             },
                           ),
                         ),
+                        Text(
+                          "Last updated at : ${DateFormat("yyyy MMM dd - hh:mm a").format(DateTime(2024,9,10,15,50))}",
+                          style: TextStyle(
+                            color: theme.disableColor,
+                            fontSize: 7
+                          ),
+                        )
                       ],
                     ),
                   );
